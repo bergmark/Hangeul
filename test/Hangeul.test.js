@@ -7,12 +7,14 @@ module.exports = {
   toHangeul : function () {
     assert.strictEqual("한", Hangeul.blockFromTranslit("han"));
     assert.strictEqual("ㅎ", Hangeul.jamoFromChar("h"));
+    assert.strictEqual("한글", Hangeul.blocksFromTranslit("han geul"));
   },
   transliterate : function () {
     assert.strictEqual("han geul", Hangeul.translitFromBlocks("한글"));
     assert.strictEqual("han", Hangeul.translitFromBlock("한"));
   },
   spaces : function () {
-    assert.strictEqual("han   geul", Hangeul.translitFromBlocks("한 글"));
+    assert.strictEqual("han  geul", Hangeul.translitFromBlocks("한 글"));
+    assert.strictEqual("한 글", Hangeul.blocksFromTranslit("han  geul"));
   }
 };
