@@ -1,3 +1,3 @@
 require("task-joose-nodejs");
-require("CactusJuice/CactusJuice");
+require("Cactus");
 require("./lib/Hangeul");
