@@ -1,0 +1,21 @@
+{
+  "name": "Hangeul",
+  "description": "Hangeul transliteration library",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Raevel/Hangeul",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Raevel/Hangeul.git"
+  },
+  "author": "Adam Bergmark <adam@edea.se> (http://www.edea.se)",
+  "main": "Hangeul.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "expresso"
+  },
+  "engines": {
+    "node": "0.4.2"
+  }
+}
